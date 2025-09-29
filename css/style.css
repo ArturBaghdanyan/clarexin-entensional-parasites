@@ -1,0 +1,846 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  background: #d30000;
+}
+.text > p {
+  color: white;
+  padding: 1rem 0.5rem;
+  width: 95%;
+  margin: auto;
+  text-transform: uppercase;
+  font: 900 60px 'Proxima Nova';
+  line-height: 100%;
+}
+
+main {
+  max-width: 1065px;
+  height: auto;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rating span {
+  font-weight: 900;
+}
+
+.rating h2 {
+  font: 900 3rem 'Proxima Nova';
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.rating h2 > b {
+  font-weight: 900;
+  color: red;
+}
+
+.rating-text {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-family: 'Plus Jakarta Sans';
+}
+.rating-title {
+  column-gap: 8px;
+}
+.rating-text img {
+  width: 35px;
+  height: 35px;
+}
+
+.rating-text-right {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  height: 100%;
+}
+
+.dr-title h2 {
+  font: 900 3rem 'Proxima Nova';
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.dr-title h2 > b {
+  font-weight: 900;
+  color: red;
+}
+
+.dr-title p {
+  font: 600 35px 'Montserrat';
+  font-style: italic;
+}
+.patient {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.patient > h1 {
+  font: 700 2rem 'Palatino';
+  line-height: 40px;
+}
+.patient > h1 > span {
+  color: red;
+}
+.patient-name {
+  font: 700 0.75rem 'Roboto';
+  line-height: 20px;
+  color: #10316a;
+}
+.patient-video > video {
+  width: 100%;
+}
+.patient-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.patient-buttons > button {
+  color: #10316a;
+  font: 700 0.875rem 'Roboto';
+  line-height: 17.5px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 64px;
+  border: none;
+  background-color: #d1e0f5;
+}
+.patient-time {
+  font: 700 0.875rem 'Roboto';
+  line-height: 20px;
+}
+
+.short {
+  width: 100%;
+  height: auto;
+  background-color: #ecf2fb;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 40px;
+  margin-top: 32.68px;
+}
+.short-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.short-column > h3 {
+  font: 700 1.25rem 'Roboto';
+  color: #10316a;
+  line-height: 30px;
+}
+.short-column > p {
+  font: 400 1.125rem 'Roboto';
+  line-height: 27px;
+  color: #000000;
+}
+.norman-image {
+  margin-top: 1.56rem;
+}
+
+.norman-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-image > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+article {
+  padding: 0;
+  color: #222;
+}
+
+.labaratory {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.labaratory-column {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 62px;
+}
+.labaratory p {
+  font: 400 1.125rem 'Roboto';
+  line-height: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .labaratory-column {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main {
+    padding: 0 2rem;
+  }
+  .patient > h1 {
+    font-size: 1.5rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+
+.man {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  height: 77px;
+}
+.man-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  font-weight: 700;
+  font-size: 1.28rem;
+}
+.man-text-item {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.man-text p {
+  font: 700 20.5px 'Plus Jakarta Sans';
+}
+
+.man-text > p > span {
+  font: 400 20.5px 'Plus Jakarta Sans';
+}
+
+.man-text-item > span {
+  font: 700 20.5px 'Montserrat';
+}
+
+@media screen and (max-width: 400px) {
+  .man {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.about-doctor {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  background: #fee9e7;
+  border-radius: 24px;
+  padding: 1rem;
+  border: 1px solid;
+}
+
+.about-doctor p {
+  font: 400 20px 'Montserrat';
+  color: #6b6a69;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 261px;
+  line-height: 100%;
+}
+.about-doctor p > span {
+  color: #ff0000;
+}
+
+.about-doctor > img {
+  max-width: 330px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.benefit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-container > h3 {
+  background: #c41010;
+  border-radius: 24px;
+  padding: 1rem 3.5rem;
+  color: white;
+  font: 700 3rem 'Montserrat';
+}
+
+.benefit-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-card {
+  display: grid;
+  grid-template-columns: 410px auto;
+  grid-gap: 1.5rem 1.75rem;
+  margin: 24px 0;
+}
+
+.benefit-card-img {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  overflow: hidden;
+  width: 409px;
+  height: 344px;
+}
+
+.benefit-card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefit-card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.benefit-card-button {
+  width: 100%;
+  background: #15ab06;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font: 700 23px 'Montserrat';
+  text-transform: uppercase;
+}
+
+.benefit-header {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.benefit-number {
+  font: 700 4.68rem 'Montserrat';
+  color: #a10000;
+}
+
+.benefit-title {
+  font: 700 2.19rem 'Montserrat';
+  line-height: 49px;
+}
+
+.benefit-content {
+  display: flex;
+  flex-direction: column;
+}
+.benefit-content > .description {
+  font: 400 1.125rem 'Montserrat';
+  line-height: 25px;
+  color: #000000;
+  word-spacing: 4px;
+  width: 93.5%;
+}
+
+strong {
+  font-weight: 900;
+  font-family: 'Montserrat';
+}
+.comparison {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+.option {
+  display: flex;
+  align-items: center;
+}
+
+.option-text {
+  font: 400 1.125rem 'Montserrat';
+  line-height: 25px;
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.buy-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.buy-title > h2 {
+  font: 700 48px 'Montserrat' !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .buy-title > h2 {
+    font: 700 25px 'Montserrat' !important;
+  }
+}
+.buy-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.buy-buttons > button {
+  background-color: none;
+  border: none;
+  text-align: center;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font: 400 18px 'Inter';
+  text-transform: uppercase;
+}
+.buy-buttons > button:first-child {
+  background-color: #15ab06;
+  color: white;
+  font: 600 18px 'Inter';
+}
+.buy-buttons > button:last-child {
+  background-color: #ffae00;
+}
+
+.buy-text > p {
+  font: 400 18px 'Montserrat';
+  line-height: 25px;
+}
+
+.buy-row {
+  width: 100%;
+  column-gap: 31px;
+  background-color: #fce9e7;
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 518px auto;
+}
+
+.buy-row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buy-row-left > h2 {
+  font: 700 40px 'Montserrat';
+}
+.buy-row-left > p {
+  font: 400 18px 'Montserrat';
+}
+
+.row-product {
+  width: 100%;
+  height: 100%;
+  margin-top: -200px;
+}
+
+div.Tech__wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.video.Tech__video {
+  object-fit: cover !important;
+  width: auto !important;
+}
+
+.buy-row-foot > p {
+  font: 400 20.5px 'Montserrat';
+  color: #6c6c6c;
+}
+
+.buy-row-foot-button {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.buy-row-foot-button > button {
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background: #15ab06;
+  color: white;
+  font: 700 23px 'Montserrat';
+  line-height: 31px;
+  margin-top: 10px;
+  padding: 0 3px;
+  height: 64px;
+}
+.buy-row-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  max-height: 564.780029296875px;
+}
+
+@media screen and (max-width: 1100px) {
+  .buy-row-foot-button > button {
+    height: auto;
+  }
+  .buy-row-image img {
+    width: 400px;
+  }
+  .benefit-card {
+    grid-template-columns: auto;
+  }
+  .benefit-card-img {
+    margin: 0 auto;
+    height: 100%;
+  }
+}
+
+.image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .about-doctor,
+  .buy-row {
+    grid-template-columns: auto;
+    gap: 15px;
+  }
+
+  .image,
+  .buy-row-image,
+  .benefit-card > img,
+  .testimonial {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .buy-row-image {
+    max-height: 900px;
+  }
+  .image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .buy-row {
+    margin-top: 25px;
+  }
+  .buy-row-image > img {
+    width: 100%;
+  }
+  .benefit-title {
+    font-size: 20px;
+  }
+
+  .benefit-card > img {
+    max-width: 100%;
+  }
+  .text > p {
+    font-size: 30px;
+  }
+  .rating > h2,
+  .benefit-container h3,
+  .buy-row-left > h2 {
+    font-size: 1.5rem;
+  }
+  .rating > h2 {
+    line-height: 30px;
+  }
+}
+
+.bonusform {
+  padding: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #000;
+  border: 8px solid #166ca7;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;base64,PHN2Z1wgd2lkdGg9XCc0OFwnXCBoZWlnaHQ9XCczMlwnXCB2aWV3Qm94PVwnMFwgMFwgNDhcIDMyXCdcIHhtbG5zPVwnaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcJz48Z1wgZmlsbD1cJ25vbmVcJ1wgZmlsbC1ydWxlPVwnZXZlbm9kZFwnPjxnXCBmaWxsPVwnI0RERFwnXCBmaWxsLW9wYWNpdHk9XCcwLjRcJz48cGF0aFwgZD1cJ00yN1wgMzJjMC0zLjMxNFwgMi42ODYtNlwgNi02XCA1LjUyM1wgMFwgMTAtNC40NzdcIDEwLTEwUzM4LjUyM1wgNlwgMzNcIDZjLTMuMzE0XCAwLTYtMi42ODYtNi02aDJjMFwgMi4yMVwgMS43OVwgNFwgNFwgNFwgNi42MjdcIDBcIDEyXCA1LjM3M1wgMTJcIDEycy01LjM3M1wgMTItMTJcIDEyYy0yLjIxXCAwLTRcIDEuNzktNFwgNGgtMnptLTZcIDBjMC0zLjMxNC0yLjY4Ni02LTYtNi01LjUyM1wgMC0xMC00LjQ3Ny0xMC0xMFM5LjQ3N1wgNlwgMTVcIDZjMy4zMTRcIDBcIDYtMi42ODZcIDYtNmgtMmMwXCAyLjIxLTEuNzlcIDQtNFwgNEM4LjM3M1wgNFwgM1wgOS4zNzNcIDNcIDE2czUuMzczXCAxMlwgMTJcIDEyYzIuMjFcIDBcIDRcIDEuNzlcIDRcIDRoMnpcJ1wgLz48L2c+PC9nPjwvc3ZnPg==');
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.bonusform p {
+  margin: 0;
+  padding: 0;
+}
+.bonusform_title {
+  display: flex;
+  gap: 30px;
+  max-width: 400px;
+  align-self: center;
+}
+.bonusform_title_logo {
+  flex-shrink: 0;
+}
+.bonusform-master {
+  width: 100%;
+}
+.bonusform-master > img {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 500px) {
+  .bonusform-master {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bonusform-master > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .guarantee-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.bonusform_title_text {
+  align-self: center;
+}
+.bonusform_title_text > b {
+  display: block;
+}
+.bonusform_order {
+  max-width: 600px;
+  font-weight: 700;
+  font-size: 16px;
+  list-style: 1.4;
+  margin: 15px 0;
+  text-align: center;
+}
+.bonusform_order > b {
+  color: #ed1b24;
+}
+.bonusform_footer {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.bonusform_footer > img {
+  margin-top: 10px;
+}
+.bonusform_value {
+  display: flex;
+  color: #166ca7;
+  font-weight: 700;
+  font-size: 20px;
+  align-items: center;
+  align-self: center;
+}
+.bonusform_value_current {
+  border: 1px solid #000;
+  color: #ff5858;
+  line-height: 1;
+  font-size: 24px;
+  padding: 5px 20px;
+  margin: 0 15px;
+}
+.bonusform_value_total {
+  font-size: 24px;
+}
+.bonusform_price {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.bonusform_price_old span {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #000;
+  position: relative;
+  line-height: 1;
+}
+.bonusform_price_old span:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 45%;
+  right: 0;
+  border-top: 4px solid #ed1b24;
+  transform: rotate(-15deg);
+}
+.bonusform_price_new span {
+  display: block;
+  background-color: #ed1b24;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;
+  font-size: 44px;
+  padding: 5px 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (max-width: 500px) {
+  .bonusform_title {
+    gap: 5px;
+  }
+  .bonusform_title_text {
+    font-size: 16px;
+  }
+  .bonusform_value {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.bonusform .name-input,
+.bonusform .phone-input {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.bonusform .name-input label,
+.bonusform .phone-input label {
+  font-weight: 700;
+  margin-top: 10px;
+}
+.bonusform .name-input input,
+.bonusform .phone-input input {
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 0;
+  background: #fff;
+  border: 2px solid #9b9b9b;
+}
+.bonusform .button-submit:focus,
+.bonusform input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 4px #bdab3c;
+}
+.bonusform .button-submit {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #fff;
+  border: 4px solid #eeeccb;
+  padding: 14px 0;
+  cursor: pointer;
+  background: #0056b5;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.bonusform .button-submit:hover {
+  background: #000;
+}
+.bonusform ::placeholder {
+  color: #000;
+  opacity: 1;
+  font-size: 16px;
+}
+.bonusform .time_remains_title {
+  font-size: 20px;
+  text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .bonusform .button-submit {
+    font-size: 0.8rem;
+  }
+  .bonusform .time_remains_title {
+    padding: 0 0.2rem;
+    font-size: 1rem;
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.guarantee-content {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* start testimonials */
+
+.testimonials-video-container {
+  width: 415px;
+  height: 415px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+
+.testimonials-video-container .testimonials-video {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials-video-container .testimonials-video div.Tech__wrapper {
+  height: 415px;
+}
+
+@media (max-width: 500px) {
+  .testimonials-video-container {
+    width: 320px;
+    height: 320px;
+  }
+
+  .testimonials-video-container .testimonials-video div.Tech__wrapper {
+    height: 320px;
+  }
+}
+
+/* end testimonials */

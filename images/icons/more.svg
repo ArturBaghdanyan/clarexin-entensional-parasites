@@ -1,0 +1,21 @@
+ <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              width="1em"
+              height="1em"
+              data-component="ChevronDoubleDown"
+              class="icon_icon__9kCSO icon_size16__Lso8B"
+              aria-hidden="true"
+            >
+              <path
+                stroke="currentColor"
+                stroke-width="2"
+                d="m19 12-7 7-7-7"
+              ></path>
+              <path
+                stroke="currentColor"
+                stroke-width="2"
+                d="m19 5-7 7-7-7"
+              ></path>
+            </svg>

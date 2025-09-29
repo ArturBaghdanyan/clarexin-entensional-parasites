@@ -1,0 +1,119 @@
+.slick-track {
+  display: flex !important;
+  gap: 16px;
+}
+
+.BigControls__wrapper {
+  display: none;
+}
+
+.Tech__wrapper {
+    border-radius: 20px !important;
+}
+
+.video-rating {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  row-gap: 1rem;
+}
+
+.video-rating .video-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 8px;
+}
+
+.video-rating-stars span {
+  font-size: 16px;
+  color: rgba(75, 85, 99, 1);
+}
+
+.video-rating-text > p {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.video-rating-text > p > b {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* start carousel arrows */
+
+.slick-next {
+  top: 100% !important;
+  left: calc(50% + 57px);
+  transform: translateX(50%) !important;
+  -webkit-transform: translateX(50%) !important;
+  -moz-transform: translateX(50%) !important;
+  -ms-transform: translateX(50%) !important;
+  -o-transform: translateX(50%) !important;
+  border: 3px solid #000000 !important;
+  border-radius: 50% !important;
+  height: 40px !important;
+  width: 40px !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  top: 100% !important;
+  left: calc(50% - 57px) !important;
+  transform: translateX(50%) !important;
+  -webkit-transform: translateX(50%) !important;
+  -moz-transform: translateX(50%) !important;
+  -ms-transform: translateX(50%) !important;
+  -o-transform: translateX(50%) !important;
+  border: 3px solid #000000 !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+  height: 40px !important;
+  width: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-next:before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15' height='24' viewBox='0 0 15 24' fill='none'><path d='M2.73236 0.470085C2.49041 0.24782 2.17067 0.129749 1.84234 0.141414C1.514 0.15308 1.20345 0.293544 0.977882 0.53242C0.752314 0.771295 0.629862 1.08937 0.637015 1.41784C0.644169 1.74631 0.780354 2.05876 1.01611 2.28759L11.3036 12.0038L1.01611 21.7201C0.780354 21.9489 0.644169 22.2614 0.637015 22.5898C0.629862 22.9183 0.752314 23.2364 0.977882 23.4753C1.20345 23.7141 1.514 23.8546 1.84234 23.8663C2.17067 23.8779 2.49041 23.7598 2.73236 23.5376L13.9824 12.9126C14.106 12.7957 14.2045 12.6548 14.2718 12.4986C14.3391 12.3423 14.3738 12.174 14.3738 12.0038C14.3738 11.8337 14.3391 11.6654 14.2718 11.5091C14.2045 11.3528 14.106 11.212 13.9824 11.0951L2.73236 0.470085Z' fill='black'/></svg>") !important;
+  color: black !important;
+  width: 13.737056732177734 !important;
+  display: block;
+}
+
+.slick-prev:before {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15' height='24' viewBox='0 0 15 24' fill='none'><path d='M2.73236 0.470085C2.49041 0.24782 2.17067 0.129749 1.84234 0.141414C1.514 0.15308 1.20345 0.293544 0.977882 0.53242C0.752314 0.771295 0.629862 1.08937 0.637015 1.41784C0.644169 1.74631 0.780354 2.05876 1.01611 2.28759L11.3036 12.0038L1.01611 21.7201C0.780354 21.9489 0.644169 22.2614 0.637015 22.5898C0.629862 22.9183 0.752314 23.2364 0.977882 23.4753C1.20345 23.7141 1.514 23.8546 1.84234 23.8663C2.17067 23.8779 2.49041 23.7598 2.73236 23.5376L13.9824 12.9126C14.106 12.7957 14.2045 12.6548 14.2718 12.4986C14.3391 12.3423 14.3738 12.174 14.3738 12.0038C14.3738 11.8337 14.3391 11.6654 14.2718 11.5091C14.2045 11.3528 14.106 11.212 13.9824 11.0951L2.73236 0.470085Z' fill='black'/></svg>") !important;
+  color: black !important;
+  width: 13.737056732177734 !important;
+  display: block;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+@media (max-width: 500px) {
+  .slick-next {
+    right: 45px !important;
+    left: inherit !important;
+  }
+
+  .slick-prev {
+    left: 0px !important;
+  }
+}
+/* end carousel arrows */
